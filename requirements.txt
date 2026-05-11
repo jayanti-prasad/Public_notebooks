@@ -1,0 +1,31 @@
+# =============================================================================
+# requirements.txt – LSTM/GRU Time-Series Forecaster
+# =============================================================================
+# Install with:
+#   pip install -r requirements.txt
+#
+# Python 3.9 – 3.11 recommended.
+# TensorFlow 2.13+ ships Keras 2 built-in; TF 2.16+ uses Keras 3 by default.
+# Either is compatible with this module.
+# =============================================================================
+
+# ── Core deep-learning stack ──────────────────────────────────────────────────
+tensorflow>=2.13.0,<3.0.0          # includes Keras; GPU variant: tensorflow[and-cuda]
+
+# ── Data handling ─────────────────────────────────────────────────────────────
+numpy>=1.24.0,<2.0.0
+pandas>=2.0.0
+
+# ── Preprocessing ─────────────────────────────────────────────────────────────
+scikit-learn>=1.3.0                # MinMaxScaler
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+
+# =============================================================================
+# Optional / development extras (uncomment as needed)
+# =============================================================================
+# jupyter>=1.0.0          # notebook support
+# ipykernel>=6.0.0        # Jupyter kernel
+# tensorboard>=2.13.0     # training visualisation (bundled with TF but listed for clarity)
+# pytest>=7.0.0           # unit testing
